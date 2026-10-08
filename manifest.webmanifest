@@ -1,0 +1,16 @@
+{
+  "name": "Ruženec",
+  "short_name": "Ruženec",
+  "description": "Modlitba ruženca – klikaj na guľôčky, appka si pamätá, kde si skončil/a.",
+  "lang": "sk",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f7f5f0",
+  "theme_color": "#2f4f86",
+  "icons": [
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
