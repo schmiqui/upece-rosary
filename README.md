@@ -66,6 +66,6 @@ npx cap add android && npx cap add ios
 
 Pred vydaním by som ešte doriešil:
 - uložená pozícia je teraz v `localStorage`; v natívnej appke ju presunúť do `@capacitor/preferences` (spoľahlivejšie na iOS)
-- nevypínanie obrazovky cez `@capacitor-community/keep-awake` a vibrácie cez `@capacitor/haptics` (iOS Safari `navigator.vibrate` nepodporuje)
+- nevypínanie obrazovky cez `@capacitor-community/keep-awake`
 - korektúra textov modlitieb (napr. niekým z farnosti)
 - ikony vo všetkých veľkostiach a splash screen

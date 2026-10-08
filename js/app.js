@@ -21,7 +21,7 @@
 
   function loadState() {
     const fallback = {
-      settings: { fullText: true, vibrate: true, keepAwake: true, theme: "auto" },
+      settings: { fullText: true, keepAwake: true, theme: "auto" },
       session: null, // { rosaryId, progress, startedAt, updatedAt }
       completed: 0,
     };
@@ -292,7 +292,6 @@
     render();
     flashSaved();
 
-    if (state.settings.vibrate && navigator.vibrate) navigator.vibrate(p > before ? 12 : [8, 40, 8]);
 
     if (undoable) showToast(message, before);
     if (p >= steps.length) showDone();
@@ -396,7 +395,6 @@
     });
 
     document.getElementById("set-fulltext").checked = state.settings.fullText;
-    document.getElementById("set-vibrate").checked = state.settings.vibrate;
     document.getElementById("set-awake").checked = state.settings.keepAwake;
   }
 
@@ -520,7 +518,7 @@
       applyWakeLock();
     });
 
-    [["set-fulltext", "fullText"], ["set-vibrate", "vibrate"], ["set-awake", "keepAwake"]].forEach(([id, key]) => {
+    [["set-fulltext", "fullText"], ["set-awake", "keepAwake"]].forEach(([id, key]) => {
       document.getElementById(id).addEventListener("change", (e) => {
         state.settings[key] = e.target.checked;
         saveState();
