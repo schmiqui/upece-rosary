@@ -1,5 +1,5 @@
 // Offline cache – appka funguje aj bez signálu (napr. v MHD).
-const CACHE = "ruzenec-v6";
+const CACHE = "ruzenec-v7";
 const FILES = [
   "./",
   "index.html",

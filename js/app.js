@@ -57,8 +57,8 @@
     const s = [];
     s.push({ bead: "cross", section: "Úvod", label: "Na kríži", parts: [P.znamenieKriza, P.verim] });
     s.push({ bead: "large", section: "Úvod", label: "Otče náš", parts: [P.otceNas] });
-    window.INTRO_MYSTERIES.forEach((f, i) => {
-      s.push({ bead: "small", section: "Úvod", label: `Zdravas ${i + 1} / 3`, count: [i + 1, 3], formula: f, parts: [zdravas(f)] });
+    r.intro.forEach((f, i) => {
+      s.push({ bead: "small", section: "Preddesiatok", label: `Zdravas ${i + 1} / 3`, count: [i + 1, 3], formula: f, parts: [zdravas(f)] });
     });
     r.mysteries.forEach((m, d) => {
       const before = d === 0 ? [P.slava] : [P.slava, P.fatima];
